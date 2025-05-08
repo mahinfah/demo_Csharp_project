@@ -38,7 +38,7 @@
             // 
             // Submit
             // 
-            this.Submit.Font = new System.Drawing.Font("Ravie", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Submit.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Submit.ForeColor = System.Drawing.Color.Teal;
             this.Submit.Location = new System.Drawing.Point(216, 390);
             this.Submit.Name = "Submit";
