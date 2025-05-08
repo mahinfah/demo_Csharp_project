@@ -33,6 +33,7 @@
             this.LBLUname = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.title = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Submit
@@ -82,12 +83,24 @@
             this.textBox2.Size = new System.Drawing.Size(154, 26);
             this.textBox2.TabIndex = 6;
             // 
+            // title
+            // 
+            this.title.AutoSize = true;
+            this.title.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.title.Font = new System.Drawing.Font("Mongolian Baiti", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title.Location = new System.Drawing.Point(243, 97);
+            this.title.Name = "title";
+            this.title.Size = new System.Drawing.Size(94, 43);
+            this.title.TabIndex = 7;
+            this.title.Text = "Title";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(571, 630);
+            this.Controls.Add(this.title);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.LBLUname);
@@ -109,6 +122,7 @@
         private System.Windows.Forms.Label LBLUname;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label title;
     }
 }
 
