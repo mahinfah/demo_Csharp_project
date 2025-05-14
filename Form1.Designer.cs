@@ -31,8 +31,8 @@
             this.Submit = new System.Windows.Forms.Button();
             this.LBLPASS = new System.Windows.Forms.Label();
             this.LBLUname = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.name = new System.Windows.Forms.TextBox();
+            this.password = new System.Windows.Forms.TextBox();
             this.title = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -40,12 +40,13 @@
             // 
             this.Submit.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Submit.ForeColor = System.Drawing.Color.Teal;
-            this.Submit.Location = new System.Drawing.Point(216, 390);
+            this.Submit.Location = new System.Drawing.Point(213, 385);
             this.Submit.Name = "Submit";
             this.Submit.Size = new System.Drawing.Size(156, 39);
             this.Submit.TabIndex = 1;
             this.Submit.Text = "Submit\r\n\r\n\r\n";
             this.Submit.UseVisualStyleBackColor = true;
+            this.Submit.Click += new System.EventHandler(this.Submit_Click);
             // 
             // LBLPASS
             // 
@@ -69,19 +70,19 @@
             this.LBLUname.TabIndex = 4;
             this.LBLUname.Text = "USERNAME";
             // 
-            // textBox1
+            // name
             // 
-            this.textBox1.Location = new System.Drawing.Point(301, 203);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(154, 26);
-            this.textBox1.TabIndex = 5;
+            this.name.Location = new System.Drawing.Point(301, 203);
+            this.name.Name = "name";
+            this.name.Size = new System.Drawing.Size(154, 26);
+            this.name.TabIndex = 5;
             // 
-            // textBox2
+            // password
             // 
-            this.textBox2.Location = new System.Drawing.Point(301, 279);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(154, 26);
-            this.textBox2.TabIndex = 6;
+            this.password.Location = new System.Drawing.Point(301, 279);
+            this.password.Name = "password";
+            this.password.Size = new System.Drawing.Size(154, 26);
+            this.password.TabIndex = 6;
             // 
             // title
             // 
@@ -101,8 +102,8 @@
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(571, 630);
             this.Controls.Add(this.title);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.password);
+            this.Controls.Add(this.name);
             this.Controls.Add(this.LBLUname);
             this.Controls.Add(this.LBLPASS);
             this.Controls.Add(this.Submit);
@@ -120,8 +121,8 @@
         private System.Windows.Forms.Button Submit;
         private System.Windows.Forms.Label LBLPASS;
         private System.Windows.Forms.Label LBLUname;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox name;
+        private System.Windows.Forms.TextBox password;
         private System.Windows.Forms.Label title;
     }
 }

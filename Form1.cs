@@ -12,6 +12,9 @@ namespace main_project
 {
     public partial class Form1 : Form
     {
+
+        private string uname="sadia";
+        private string pass="123";
         public Form1()
         {
             InitializeComponent();
@@ -26,5 +29,16 @@ namespace main_project
         {
 
         }
+
+        private void Submit_Click(object sender, EventArgs e)
+        {
+            if(uname==name.Text&&pass==password.Text)
+            {
+                 MessageBox.Show("login done");
+            }
+         
+        }
+
+
     }
 }
