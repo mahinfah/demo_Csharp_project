@@ -34,6 +34,7 @@
             this.name = new System.Windows.Forms.TextBox();
             this.password = new System.Windows.Forms.TextBox();
             this.title = new System.Windows.Forms.Label();
+            this.register = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Submit
@@ -95,12 +96,24 @@
             this.title.TabIndex = 7;
             this.title.Text = "Title";
             // 
+            // register
+            // 
+            this.register.AutoSize = true;
+            this.register.BackColor = System.Drawing.SystemColors.Info;
+            this.register.Location = new System.Drawing.Point(251, 474);
+            this.register.Name = "register";
+            this.register.Size = new System.Drawing.Size(69, 20);
+            this.register.TabIndex = 8;
+            this.register.Text = "Register";
+            this.register.Click += new System.EventHandler(this.label1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(571, 630);
+            this.Controls.Add(this.register);
             this.Controls.Add(this.title);
             this.Controls.Add(this.password);
             this.Controls.Add(this.name);
@@ -124,6 +137,7 @@
         private System.Windows.Forms.TextBox name;
         private System.Windows.Forms.TextBox password;
         private System.Windows.Forms.Label title;
+        private System.Windows.Forms.Label register;
     }
 }
 
